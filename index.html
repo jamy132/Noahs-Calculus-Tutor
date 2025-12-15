@@ -196,7 +196,7 @@
             <p class="tagline">ACCESSING TUTORING HUB...</p>
             <div class="terminal-prompt">
                 <p class="prompt-line">> SYSTEM BOOTING...</p>
-                <p class="prompt-line">> WELCOME TO NOAH'S TUTORING HUB.</p>
+                <p class="prompt-line">> WELCOME TO Nos Games(Branch of Jamy132 Games).</p>
                 <p class="prompt-line">> CONNECTING... <span class="glow" style="color: var(--primary-orange);">SUCCESS</span></p>
                 <p class="prompt-line">> LESSONS LOADING...</p>
                 <p class="prompt-line typing">> BOREDOM BEING SOLVED...</p>
@@ -204,7 +204,6 @@
         </header>
         <div class="nav-tabs">
             <div class="nav-tab active" id="lessonsTab" onclick="switchTab('lessons')">LESSONS</div>
-            <div class="nav-tab" id="partnersTab" onclick="switchTab('partners')">PARTNERS</div>
         </div>
         <section id="lessons-section">
             <h2>POPULAR</h2>
@@ -244,37 +243,6 @@
                         <button class="visit-btn" onclick="window.open('https://glacierarcade.xyz/', '_blank')">VISIT SITE</button>
                     </div>
                 </div>
-                <div class="partner-card">
-                    <img src="https://cdn.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/pictures/3.jpg" alt="Partner Logo" class="partner-image">
-                    <h3 class="partner-title">Rosin</h3>
-                    <p class="partner-desc">Rosin, your one-stop for 567+ unblocked games with clean UI, accounts, and BYOD. All this and much more. Made with ❤️ for gamers everywhere.</p>
-                    <div class="partner-buttons">
-                        <button class="discord-btn" onclick="window.open('https://discord.gg/xzwUY9R8Tp', '_blank')">
-                            <i class="fab fa-discord"></i>
-                        </button>
-                        <button class="visit-btn" onclick="window.open('https://afcyqmpzsb.itafricagroup.com/', '_blank')">VISIT SITE</button>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <img src="https://cdn.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/pictures/4.png" alt="Partner Logo" class="partner-image">
-                    <h3 class="partner-title">GN-Math</h3>
-                    <p class="partner-desc">Most popular UBG sites use my games!! (doge unblocker, frogies arcade, truffled, petezah and more)</p>
-                    <div class="partner-buttons">
-                        <button class="discord-btn" onclick="window.open('https://discord.gg/gn-math', '_blank')">
-                            <i class="fab fa-discord"></i>
-                        </button>
-                        <button class="visit-btn" onclick="window.open('https://gn-math.dev/', '_blank')">VISIT SITE</button>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <img src="https://cdn.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/pictures/6.jpg" alt="Partner Logo" class="partner-image">
-                    <h3 class="partner-title">Truffled</h3>
-                    <p class="partner-desc">Join us so we can grow and hopefully be one of the biggest unblocked game sites ❤️</p>
-                    <div class="partner-buttons">
-                        <button class="discord-btn" onclick="window.open('https://discord.gg/truffled', '_blank')">
-                            <i class="fab fa-discord"></i>
-                        </button>
-                        <button class="visit-btn" onclick="window.open('https://truffled.lol/', '_blank')">VISIT SITE</button>
                     </div>
                 </div>
             </div>
@@ -297,7 +265,6 @@
             </div>
         </section>
         <footer>
-            <p>© 2025 Noah's Tutoring Hub. All rights reserved.</p>
             <p>Educational purposes only.</p>
         </footer>
     </div>
@@ -734,7 +701,7 @@
         function downloadCurrentGame(){
             const f=document.getElementById('gameFrame'),u=f.src,t=document.getElementById('gameTitle').textContent;
             console.log('Download attempted for:',u,'Title:',t);
-            if(u&&u.includes('https://raw.githack.com/NoahsAmazingTutoringHelp/Noahs-Calculus-Tutor/master/games/')&&u.includes('.html')){
+            if(u&&u.includes('https://github.com/jamy132/Noahs-Calculus-Tutor/tree/28959bbec71dc8f03cdb457448cd772e5a6df852/games')&&u.includes('.html')){
                 trackEvent('game_interaction','download_attempt',t,1);initiateDownload(u,t);
             }else{
                 trackEvent('game_interaction','download_failed',t,1);alert('Sorry, this game is not downloadable. Try another one.');
